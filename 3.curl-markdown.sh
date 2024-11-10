@@ -1,1 +1,0 @@
-curl "https://www.studioneat.com/products/markone" -o "markone-bash.html"
