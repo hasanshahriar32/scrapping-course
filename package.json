@@ -1,0 +1,26 @@
+{
+  "name": "scrapping-course",
+  "version": "1.0.0",
+  "description": "scrapping course: 1/1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^23.9.0",
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "ts-node": "^10.9.1",
+    "@types/node": "^18.16.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

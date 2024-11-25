@@ -1,0 +1,14 @@
+bun init 
+bun i puppeteer
+bun run index.ts
+
+--- 
+
+docker run -it -rm oven/bun:debian tail -f /dev/null
+docker run -it -rm --init oven/bun:debian tail -f /dev/null
+docker run -it -rm --init -v $(pwd):/app oven/bun:debian bash
+
+---
+
+cd /app
+bun run index.ts
