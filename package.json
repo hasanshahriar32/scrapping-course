@@ -5,20 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node index.ts",
+    "start": "bun run index.js",
     "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bun": "^1.1.38",
     "puppeteer": "^23.9.0",
     "tsc": "^2.0.4"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "ts-node": "^10.9.1",
-    "@types/node": "^18.16.0"
+    "@types/node": "^18.16.0",
+    "ts-node": "^10.9.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
