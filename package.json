@@ -11,6 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "jiti": "^2.4.1",
-    "puppeteer": "^23.9.0"
+    "puppeteer": "^23.9.0",
+    "puppeteer-core": "^23.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1"
   }
 }
