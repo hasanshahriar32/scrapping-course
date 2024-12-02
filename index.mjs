@@ -3,7 +3,7 @@ import puppeteer from 'puppeteer-core';
 async function main() {
   const browser = await puppeteer.launch({
     executablePath: './.cache/puppeteer/chrome/linux-131.0.6778.85/chrome-linux64/chrome',
-    // headless: false
+    headless: 'shell'
   });
 
   const page = await browser.newPage();
