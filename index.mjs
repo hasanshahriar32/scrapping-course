@@ -1,13 +1,12 @@
-import puppeteer from 'puppeteer-core';
+import puppeteer from 'puppeteer';
 
 async function main() {
   const browser = await puppeteer.launch({
-    executablePath: '/bin/google-chrome-stable',
-    headless: false
-  });
+  args: ['--no-sandbox', '--disable-setuid-sandbox'],
+});
 
   const page = await browser.newPage();
-  await page.goto('');
+  await page.goto('https://shahriarhasan.vercel.app');
   const version = await browser.version();
   await browser.close();
   console.log({ version });
